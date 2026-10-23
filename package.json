@@ -1,0 +1,25 @@
+{
+  "name": "noture.com",
+  "version": "0.0.1",
+  "description": "The website for Noture, a music notation language.",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmatthew-ie/noture.com.git"
+  },
+  "keywords": [],
+  "author": "David Matthew",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@shikijs/transformers": "^4.5.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.2",
+    "tailwindcss": "^4.3.3"
+  }
+}
