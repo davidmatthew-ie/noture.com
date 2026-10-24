@@ -36,9 +36,8 @@ export default defineConfig({
       ]
     }
   },
-
-  site: "https://noture.com",
-
+  site: "https://davidmatthew-ie.github.io",
+  base: "/noture.com",
   vite: {
     plugins: [tailwindcss()],
   }
