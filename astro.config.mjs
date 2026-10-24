@@ -7,9 +7,16 @@ export default defineConfig({
   fonts: [
     {
       name: "Inter",
-      cssVariable: "--font-source-sans",
+      cssVariable: "--font-inter",
       provider: fontProviders.fontsource(),
-      weights: [400, 500, 700],
+      weights: [400, 600],
+      styles: ["normal", "italic"]
+    },
+    {
+      name: "Cormorant",
+      cssVariable: "--font-cormorant",
+      provider: fontProviders.fontsource(),
+      weights: [600],
       styles: ["normal"]
     },
     {
