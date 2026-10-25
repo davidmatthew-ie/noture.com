@@ -1,10 +1,10 @@
 {
-  "name": "",
-  "infoUrl": "",
+  "name": "Noture",
+  "infoUrl": "https://davidmatthew-ie.github.io/noture.com/",
   "support": {
-    "note-sounded-pitch": {"level": 3, "text": "Not implemented", "link": ""},
+    "note-sounded-pitch": {"level": 1, "text": "Implemented", "link": ""},
     "note-written-pitch": {"level": 3, "text": "Not implemented", "link": ""},
-    "note-pitch-step": {"level": 3, "text": "Not implemented", "link": ""},
+    "note-pitch-step": {"level": 1, "text": "Implemented", "link": ""},
     "note-pitch-octave": {"level": 3, "text": "Not implemented", "link": ""},
     "note-pitch-alter": {"level": 3, "text": "Not implemented", "link": ""},
     "note-pitch-alter-microtone": {"level": 3, "text": "Not implemented", "link": ""},

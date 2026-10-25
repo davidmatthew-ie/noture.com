@@ -6,10 +6,10 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   fonts: [
     {
-      name: "Inter",
-      cssVariable: "--font-inter",
+      name: "Geist",
+      cssVariable: "--font-geist",
       provider: fontProviders.fontsource(),
-      weights: [400, 600],
+      weights: [300, 400, 600],
       styles: ["normal", "italic"]
     },
     {
@@ -17,7 +17,7 @@ export default defineConfig({
       cssVariable: "--font-cormorant",
       provider: fontProviders.fontsource(),
       weights: [600],
-      styles: ["normal"]
+      styles: ["normal", "italic"]
     },
     {
       name: "Fragment Mono",

@@ -2,3 +2,9 @@
 @import './base.css' layer(base);
 @import './typography.css' layer(components);
 @utility container { margin: auto }
+@theme {
+	  /* Fonts and font-sizes */
+  --font-sans: var(--font-geist), Helvetica, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: var(--font-fragment-mono), SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}

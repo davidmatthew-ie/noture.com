@@ -1,14 +1,18 @@
 ---
 import Base from "@layouts/Base.astro";
+import Features from "@components/Features.astro";
 
 const title = 'Home';
-const description = 'A music notation language.'
+const description = 'A music notation language that compiles to MEI (Music Encoding Initiative) markup.'
 ---
 
 <Base title={title} description={description}>
 
-	<h1>Noture</h1>
+	<h1 class="text-9xl">Noture</h1>
 
 	<p>{description}</p>
+
+	<h2 class="font-sans font-normal">Feature Table</h2>
+	<Features />
 
 </Base>

@@ -1,0 +1,66 @@
+---
+import concepts from '@assets/features/w3c-musical-concepts.json';
+import featureSupport from '@assets/features/w3c-feature-support.json';
+
+function createFeatureData(features: object, concepts: object) {
+	// The data to create.
+	const data = [];
+
+	const featuresArray = Array.from(Object.entries(features));
+
+	Object.keys(features).forEach((id, index) => {
+		const name = findObjectById(concepts, id)?.name;
+		const level = featuresArray[index][1].level;
+		const details = featuresArray[index][1].text;
+
+		data.push([id, level, details, name]);
+	});
+
+  return data;
+}
+
+/**
+ * A recursive function to retrieve objects based on an id.
+ */
+export function findObjectById(data: object, id: string) : object | null {
+  if (!data || typeof data !== 'object') return null;
+  if (data.id === id) return data;
+
+	// Handle nested array data.
+  if (Array.isArray(data)) {
+    for (const item of data) {
+      const result = findObjectById(item, id);
+      if (result) return result;
+    }
+	}
+
+	// Handle nested object data.
+  for (const key of Object.keys(data)) {
+    const result = findObjectById(data[key], id);
+    if (result) return result;
+  }
+}
+
+const features = createFeatureData(featureSupport.support, concepts)
+---
+
+<table class="sortable">
+	<thead>
+		<tr>
+			<th scope="col">Feature Id</th>
+			<th scope="col">Level</th>
+			<th scope="col">Detail</th>
+			<th scope="col">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		{features.map(feature => 
+		  <tr>
+				<td>{feature[0]}</td>
+				<td>{feature[1]}</td>
+				<td>{feature[2]}</td>
+				<td>{feature[3]}</td>
+			</tr>
+		)}
+	</tbody>
+</table>
