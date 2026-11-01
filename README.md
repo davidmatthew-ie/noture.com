@@ -4,4 +4,4 @@ The code for the Astro-based Noture website.
 
 ## Noture
 
-Noture is a music notation language created by David Matthew.
+Noture is a WIP web app for sheet music management and playback.
